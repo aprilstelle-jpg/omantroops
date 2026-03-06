@@ -1,1 +1,131 @@
-test
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Syracuse Reports</title>
+  </head>
+
+  <body>
+    <!-- Top utility bar -->
+    <div class="topbar">
+      <div
+        class="container d-flex justify-content-between align-items-center"
+        style="max-width: var(--max-w)"
+      >
+        <span id="topbar-date"></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Masthead -->
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="publication-name" href="#">Syracuse Reports<span>.</span></a>
+        <div class="masthead-meta">
+          Syracuse University<br />S.I. Newhouse School
+        </div>
+      </div>
+    </header>
+
+    <!-- Section nav -->
+    <nav class="section-nav" aria-label="Site sections">
+      <div class="section-nav-inner">
+        <a href="#" class="active">Home</a>
+        <a href="#">Section 1</a>
+        <a href="#">Section 2</a>
+        <a href="#">Section 3</a>
+      </div>
+    </nav>
+
+    <!-- Article -->
+    <main class="article-wrapper">
+      <div class="article-section-label">JNL 221 Reports</div>
+
+      <h1 class="article-headline">U.S. Troop Presence in Oman</h1>
+
+      <p class="article-deck">
+        Oman is within striking distance of Iran, sits right on the Strait of Hormuz, a passage between the Persian Gulf and Gulf of Oman which a large percentage of the world's oil passes through, and has been a key U.S. military ally since 1980. Here's a look at the history of U.S. troops in Oman and how that presence has evolved over time.
+      </p>
+
+      <div class="article-byline">
+        <span>By <span class="byline-author">April Stelle</span></span>
+        <span id="byline-date"></span>
+      </div>
+
+      <div class="article-body">
+        <p>
+          Oman and the U.S. signed a military cooperation agreement in 1980, following the Iranian Revolution in 1979. This agreement was revised and renewed in 2010 and marked the beginning of a formal military relationship between the two countries, allowing for joint exercises, training, and the presence of U.S. troops in Oman. Over the years, the number of U.S. troops stationed in Oman has fluctuated based on security needs and conflicts in the Middle East.
+        </p>
+        <p>
+          There was a gradual increase in U.S. troop presence in Oman from 1980-1999, with a significant spike in 2000. The number of troops present reached a peak in 2001, with the start of the War in Afghanistan post-9/11. By 2002, the 673 troops had a staggering drop down to 31. 
+        </p>
+        <p>
+          The number of U.S. troops remained stable until 2010, when the military cooperation agreement was renewed. There were multiple peaks and valleys as the U.S. adjusted its military presence based on the conflicts in the region. 2014 brought the next peak of U.S. troop presence, which could be explained by numerous events at the time. One notable event was the secret nuclear negotiations between the U.S. and Iran, which were carried out in Oman from 2013-2014. Since then, troop presence has died down.
+        </p>
+
+        <hr class="section-rule" />
+
+        <!-- Datawrapper chart -->
+        <div class="embed-block">
+          <div class="embed-label">Chart</div>
+          <div class="embed-placeholder">
+            <iframe title="US Troops in Oman since 1951" aria-label="Line chart" id="datawrapper-chart-EuD2p" src="https://datawrapper.dwcdn.net/EuD2p/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="443" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+          </div>
+        </div>
+
+        <hr class="section-rule" />
+
+
+        <hr class="section-rule" />
+        <!-- Datawrapper map -->
+        <div class="embed-block">
+          <div class="embed-label">Interactive Map</div>
+          <div class="embed-placeholder">
+            <iframe title="Oman Location in relation to Iran, Afghanistan and the Strait of Hormuz" aria-label="Locator map" id="datawrapper-chart-XBRMc" src="https://datawrapper.dwcdn.net/XBRMc/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="557" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const now = new Date();
+      const opts = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      const dateStr = now.toLocaleDateString("en-US", opts);
+      document.getElementById("topbar-date").textContent = dateStr;
+      document.getElementById("byline-date").textContent = dateStr;
+      document.getElementById("footer-year").textContent = now.getFullYear();
+    </script>
+  </body>
+</html>
